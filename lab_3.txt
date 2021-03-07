@@ -16,4 +16,23 @@
 
 9)SELECT * FROM `pk`    WHERE (price/page)<0.1
 
-10)
+10)SELECT *,LENGTH(name)as lenght, UPPER(SUBSTRING(name,1,20))as upper FROM `pk`    WHERE 1
+
+11)SELECT *,LEFT(name,10)as det ,RIGHT(name,10)as upper FROM `pk`    WHERE 1 !!!!!!!!!
+
+12)SELECT name,dates,YEAR(dates),MONTH(dates),DAY(dates) FROM `pk`    WHERE 1
+
+13)SELECT name,dates,DATE_FORMAT(dates,'%d-%m-%Y')as dat FROM `pk`    WHERE 1
+
+14)SELECT kode,price,(price*27.72)as gr,(price*0.83)as ev,(price*73.58)as rub FROM `pk`    WHERE 1
+
+15)SELECT kode,price,(price*27.72)as gr,ROUND((price*27.72 ),-1) as wer ,ROUND((price*27.72 ),0) as wer  FROM `pk`    WHERE 1
+
+16)INSERT INTO pk(nom,kode,new,name,price,production,page,format,dates,counts,topic,category)
+VALUES(1,5111,'No','прикладна механіка',10,'farst',375,'70x100/18','2000-02-03',5000,'робота з механікою проесорівб','підручник')
+
+17)
+
+18)DELETE FROM pk WHERE dates<'2000-00-00'
+
+19)
