@@ -1,0 +1,19 @@
+1)SELECT * FROM `pk` WHERE price=NULL OR price=0
+
+2)SELECT * FROM `pk` WHERE price!= NULL AND counts=NULL
+
+3)SELECT * FROM `pk` WHERE dates=NULL
+
+4)SELECT * FROM `pk` WHERE dates>'2020-02-02'
+
+5)SELECT * FROM `pk` WHERE new='Yes' ORDER BY price ASC
+
+6)SELECT * FROM `pk` WHERE page>=300 AND page<=400 ORDER BY name DESC
+
+7)SELECT * FROM `pk` WHERE price>=20 AND price<=40 ORDER BY dates DESC
+
+8)SELECT * FROM `pk`   ORDER BY name DESC, price DESC
+
+9)SELECT * FROM `pk`    WHERE (price/page)<0.1
+
+10)
